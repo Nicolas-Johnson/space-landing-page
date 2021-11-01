@@ -1,10 +1,10 @@
 import React from 'react';
-import DataProvider from '../context/DataProvider';
+// import DataProvider from '../context/DataProvider';
 import Navigation from '../Components/Nav';
 
 const Home = () => {
   return (
-    <DataProvider>
+    <div>
       <Navigation />
       <div>
         <div>
@@ -18,7 +18,7 @@ const Home = () => {
           <button type="button">Explore</button>
         </div>
       </div>
-    </DataProvider>
+    </div>
   );
 }
 

@@ -6,9 +6,7 @@ const Technology = () => {
   return (
     <DataProvider>
       <Navigation />
-      <div>
-        <h1>Technology</h1>
-      </div>
+      <h1>Technology</h1>
     </DataProvider>
   );
 }

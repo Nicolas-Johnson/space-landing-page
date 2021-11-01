@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import DataContext from '../context/DataContext';
 
 const DestinationNav = (props) => {
-  const { handleDesination } = props;
+  const { handleDesination } = useContext(DataContext);
   return (
       <nav>
         <ul>

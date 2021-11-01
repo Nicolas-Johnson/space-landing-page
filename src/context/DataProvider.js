@@ -3,7 +3,12 @@ import DataContext from './DataContext'
 
 const DataProvider = (props) => {
   const [Data, setData] = useState([]);
-  const [destination, setDestination] = useState('');
+  const [destination, setDestination] = useState('Moon');
+  const [crewCurrent, setCrew] = useState('Douglas Hurley');
+
+  const handleCrew = (CrewOne) => {
+    setCrew(CrewOne);
+  }
 
   const handleDesination = (destinationPiquer) => {
     setDestination(destinationPiquer);    
@@ -20,9 +25,17 @@ const DataProvider = (props) => {
   useEffect(()=> {
     fetchData();
   }, []);
+
+  const CONTEXT_OBJ = {
+    data: Data,
+    destination,
+    crewCurrent,
+    handleDesination,
+    handleCrew,
+  }
   
   return (
-    <DataContext.Provider value={ { data: Data, destination: destination, handleDesination: handleDesination } }>
+    <DataContext.Provider value={ CONTEXT_OBJ }>
       { props.children}
     </DataContext.Provider>
   );

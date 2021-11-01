@@ -1,15 +1,10 @@
-import React, { useState, useContext } from 'react';
-import DestinationNav from '../Components/DestinationNav';
+import React, { useContext } from 'react';
+import DestinationNav from './DestinationNav';
 // import DataProvider from '../context/DataProvider';
 import DataContext from '../context/DataContext';
 
 const DestinationCard = () => {
-  const { data: { destinations } } = useContext(DataContext);
-  const [destination, setDestination] = useState('Moon');
-
-  const handleDesination = (destinationPiquer) => {
-    setDestination(destinationPiquer);    
-  }
+  const { data: { destinations }, destination } = useContext(DataContext);
 
   if (destinations) {
     const dest = destinations.filter((d) => d.name === destination);
@@ -24,9 +19,9 @@ const DestinationCard = () => {
         <div key={name}>
           <div>
             <h1>01 Pick your destination</h1>
-            <img src={ imagePath } alt={`Image of ${name}`} />
+            <img src={ imagePath } alt={ name } />
           </div>
-          <DestinationNav handleDesination={ handleDesination }/>
+          <DestinationNav />
           <div>
             <h1>{ name }</h1>
             <p>
@@ -44,9 +39,7 @@ const DestinationCard = () => {
         </div>
       );
     })
-  }
-
-  
+  }  
 
   return (
     <div>
