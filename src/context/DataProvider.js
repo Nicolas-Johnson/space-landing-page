@@ -5,6 +5,11 @@ const DataProvider = (props) => {
   const [Data, setData] = useState([]);
   const [destination, setDestination] = useState('Moon');
   const [crewCurrent, setCrew] = useState('Douglas Hurley');
+  const [techOnRender, setCurrTech] = useState('Launch vehicle');
+
+  const handleTech = (techToRender) => {
+    setCurrTech(techToRender);
+  }
 
   const handleCrew = (CrewOne) => {
     setCrew(CrewOne);
@@ -30,8 +35,10 @@ const DataProvider = (props) => {
     data: Data,
     destination,
     crewCurrent,
+    techOnRender,
     handleDesination,
     handleCrew,
+    handleTech,
   }
   
   return (
