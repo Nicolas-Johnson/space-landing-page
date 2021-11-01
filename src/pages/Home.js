@@ -1,6 +1,7 @@
 import React from 'react';
 // import DataProvider from '../context/DataProvider';
 import Navigation from '../Components/Nav';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
           </p>
         </div>
         <div>
-          <button type="button">Explore</button>
+          <button type="button"><Link to="/destination">Explore</Link></button>
         </div>
       </div>
     </div>
