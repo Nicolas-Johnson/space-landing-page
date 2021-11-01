@@ -26,26 +26,25 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![plot](./public/images/preview.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Solution URL Live DEMO](https://your-solution-url.com)
 
 ## My process
 
 ### Built with
 
 - [React](https://reactjs.org/) - JS library
-- [React-Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)
-- [React-ContexAPI](https://pt-br.reactjs.org/docs/context.html) - for state management
+- [React-Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html) - funtional components.
+- [React-ContexAPI](https://pt-br.reactjs.org/docs/context.html) - for state management.
+- [React-Router](https://reactrouter.com/web/guides/philosophy) - for route creation.
 - [SASS](https://sass-lang.com/) - for styles
 - Semantic HTML5 markup
 - Mobile-first workflow
 
 ## Author
 
-Solution by [Nicolas Johnson](https://safe-cliffs-01394.herokuapp.com/)</br>
-[Linkedin](https://www.linkedin.com/in/nicolas-johnson-279662210/) </br>
-[GitHub](https://github.com/Nicolas-Johnson)</br>
-[Project Repo](https://github.com/Nicolas-Johnson/space-landing-page)
+- [Nicolas Johnson](https://safe-cliffs-01394.herokuapp.com/)
+- [Linkedin](https://www.linkedin.com/in/nicolas-johnson-279662210/)
