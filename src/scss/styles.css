@@ -3,14 +3,15 @@ html {
   font-size: 100%;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #0c0e18;
+  color: white;
 }
 
 h1,
@@ -19,14 +20,12 @@ h3,
 h4 {
   font-family: "Bellefair", serif;
   font-weight: 400;
-  color: white;
 }
 
 h5,
 p {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
-  color: white;
 }
 
 h1 {
@@ -65,4 +64,68 @@ ul,
 ol,
 li {
   list-style: none;
+}
+
+.hideScroll {
+  max-width: 100%;
+  overflow-y: hidden;
+}
+
+.off {
+  display: none;
+}
+
+.navContainer {
+  display: relative;
+}
+.navContainer .overLay {
+  position: absolute;
+  height: 100%;
+  width: 68%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: #0c0e18;
+  opacity: 0.7;
+  filter: blur(13px);
+}
+.navContainer .navigation {
+  position: fixed relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+  font-size: 1rem;
+  letter-spacing: 0.1688rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+}
+.navContainer .navigation .menuIcon {
+  position: absolute;
+  right: 24px;
+  top: 33px;
+  z-index: 5;
+}
+.navContainer .navigation .iconLogo {
+  position: absolute;
+  padding-top: 24px;
+  padding-left: 24px;
+  z-index: 5;
+}
+.navContainer .navigation #menuList {
+  position: absolute;
+  width: 50%;
+  top: 121px;
+  left: 153px;
+  z-index: 5;
+  padding: 0;
+  margin: 0;
+}
+.navContainer .navigation #menuList li:not(:last-child) {
+  margin-bottom: 40px;
+  background-color: #0c0e18;
+}
+.navContainer .navigation #menuList li span {
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */

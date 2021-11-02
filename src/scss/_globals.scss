@@ -2,14 +2,15 @@ html {
   font-size: 100%;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: $DarkBlue;
+  color: $White;
 }
 
 h1,
@@ -18,14 +19,13 @@ h3,
 h4 {
   font-family: 'Bellefair', serif;
   font-weight: 400;
-  color: $White;
+  
 }
 
 h5,
 p {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
-  color: $White;
 }
 
 h1 {
@@ -60,4 +60,14 @@ ul,
 ol,
 li {
   list-style: none;
+}
+
+.hideScroll {
+  max-width: 100%;
+  overflow-y: hidden;
+}
+
+  
+.off {
+  display: none;
 }
