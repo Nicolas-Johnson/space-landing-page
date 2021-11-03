@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 100%;
 }
@@ -75,6 +80,47 @@ li {
   display: none;
 }
 
+.homeContainer {
+  background: url("./home/background-home-mobile.jpg") bottom no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+.homeContainer .homecontent {
+  width: 87%;
+  height: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.homeContainer .homecontent .homeText {
+  padding: 30px 0 0 0;
+}
+.homeContainer .homecontent .homeText h5 {
+  margin-bottom: 37px;
+  font-size: 1rem;
+}
+.homeContainer .homecontent .homeText h1 {
+  margin-bottom: 50px;
+  font-size: 6.25rem;
+}
+.homeContainer .homecontent .homeText p {
+  font-size: 10px;
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+.homeContainer .homecontent .homeBtn {
+  margin-top: 87px;
+}
+.homeContainer .homecontent .homeBtn .circleBtn {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.homeContainer .homecontent .homeBtn .circleBtn .linkBtn {
+  font-size: 1.125rem;
+  color: black;
+  z-index: 10;
+}
+
 .navContainer {
   display: relative;
 }
@@ -118,7 +164,7 @@ li {
   width: 50%;
   top: 121px;
   left: 153px;
-  z-index: 5;
+  z-index: 10;
   padding: 0;
   margin: 0;
 }
